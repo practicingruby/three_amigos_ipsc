@@ -4,7 +4,7 @@ def process(file)
      n.times do
        f.gets
        a,b,c,d = f.gets.chomp.split(/ /).map { |e| Integer(e) }
-       p optimize(a,b,c,d)
+       puts optimize(a,b,c,d)
      end
   end
 end

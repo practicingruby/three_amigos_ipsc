@@ -8,7 +8,7 @@ tests.times do
   numbers = ARGF.gets.split.map { |n| n.to_i }
   
   loop do
-    if numbers != numbers.sort
+    if numbers != numbers.sort and numbers != numbers.sort { |a, b| b <=> a }
       puts
       puts numbers.size
       puts numbers.join(" ")
